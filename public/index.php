@@ -2,11 +2,17 @@
 
 session_start();//here we start a session
 $email=$_SESSION["email"];
+<<<<<<< HEAD
 // error_reporting(0);
 
 require("../urls/stats.php");
 require("../database/date.php");
 
+=======
+error_reporting(0);
+
+require("../urls/stats.php");
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 
 
@@ -14,6 +20,7 @@ if(!isset($email)){
      echo "<script>window.open('../','_self')</script>";
 }
 
+<<<<<<< HEAD
 
 // Update tally table
 
@@ -57,6 +64,8 @@ else{
 
 
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 ?>
 
 <html lang="en">
@@ -79,19 +88,28 @@ require("../headers.php");
 
         <div class="row" style="padding:0">
             <div class="col-md-12" style="padding:0">
+<<<<<<< HEAD
                 <div class="col-sm-2" id="sidenav">
+=======
+            <div class="col-sm-2" id="sidenav">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                     <div id="head">
                         <div class="col-sm-2">
                             <i class="fa fa-briefcase fa-2x" style="color:#ccc"></i>
                         </div>
                         <div class="col-sm-10">
+<<<<<<< HEAD
                             Administrator
+=======
+                           Administrator
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         </div>
                     </div>
 
                     <div id="side-nav-links">
                         <a href="index.php" class="active"><i class="fa fa-tachometer-alt"></i>Dashboard</a>
                         <a href="register_student.php"><i class="fa fa-user"></i> Register student</a>
+<<<<<<< HEAD
                         <a href="all_students.php"><i class="fa fa-graduation-cap"></i>All student <span class="badge">
                                 <?php echo $students_nums?></span> </a>
                         <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge">
@@ -99,17 +117,27 @@ require("../headers.php");
                         <a href=""><i class="fa fa-exchange-alt"></i> Transfered students</a>
                         <a href="fee.php"><i class="fa fa-money-bill-alt"></i> Fee</a>
                         <a href="#"><i class="fa fa-bookmark"></i> Fee structure</a>
+=======
+                        <a href="all_students.php" ><i class="fa fa-graduation-cap"></i>All student <span class="badge"><?php echo $students_nums?></span> </a>
+                        <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge"><?php echo $de_registred_nums?></span></a>
+                        <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <a href="admins.php"><i class="fa fa-cogs"></i> Admin Setting</a>
                         <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </div>
                 </div>
                 <div class="col-sm-10" id="main-div">
+<<<<<<< HEAD
                     <nav class="navbar navbar-default">
+=======
+                <nav class="navbar navbar-default">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <a class="navbar-brand" href="#"></a>
                             </div>
                             <ul class="nav navbar-nav">
+<<<<<<< HEAD
                                 <li class="active"><a href="#">
                                         <?php echo $email ?></a></li>
                                 <li><a href="#">
@@ -117,17 +145,29 @@ require("../headers.php");
 
                                         <li><a href="#">
                                         <?php echo $the_current_term ?></a></li>
+=======
+                                <li class="active"><a href="#"><?php echo $email ?></a></li>
+                                <li><a href="#"><?php echo $school?></a></li>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                 <li><a href="logout.php">Log Out</a></li>
                             </ul>
                         </div>
                     </nav>
 
                     <div class="container-fluid" id="main">
+<<<<<<< HEAD
 
                         <div class="row">
                             <div class="col-sm-12">
                                 <h3 style="padding:10px"><i class="fa fa-tachometer-alt"></i> Dashboard</h3>
                                 <hr>
+=======
+                       
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h3 style="padding:10px"><i class="fa fa-tachometer-alt"></i> Dashboard</h3>
+                        <hr>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                 <div class="col-sm-3">
                                     <div class="panel panel-default" id="panel1">
 
@@ -178,7 +218,11 @@ require("../headers.php");
                                                     <?php echo $male_students_nums ?>
                                                 </span><br>
                                                 <span class="big2">
+<<<<<<< HEAD
                                                     Male
+=======
+                                                   Male
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                                 </span>
                                             </div>
                                         </div>
@@ -208,6 +252,7 @@ require("../headers.php");
 
                                 <div class="col-sm-12">
                                     <div class="col-sm-6">
+<<<<<<< HEAD
                                         <h3>Class stats</h3>
                                         <hr>
                                         <table class="table">
@@ -289,6 +334,53 @@ require("../headers.php");
                               </tbody>
                               </table>
                                     </div>
+=======
+                                    <h3>Class stats</h3>
+                                    <hr>
+                                    <table class="table">
+                                        <thead>
+                                            <th>Class</th>
+                                           <th>Number of students</th> 
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Class 1</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 2</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 3</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 4</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 5</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 6</td>
+                                
+                                            </tr>
+                                            <tr>
+                                                <td>Class 7</td>
+                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Class 8</td>
+                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="col-sm-6"></div>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                 </div>
 
                             </div>

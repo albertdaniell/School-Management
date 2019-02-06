@@ -68,8 +68,11 @@ require("../headers.php");
                         <a href="all_students.php" ><i class="fa fa-graduation-cap"></i>All student <span class="badge"><?php echo $students_nums?></span> </a>
                         <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge"><?php echo $de_registred_nums?></span></a>
                         <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
+<<<<<<< HEAD
                         <a href="fee.php"><i class="fa fa-money-bill-alt"></i> Fee</a>
                         <a href="#"><i class="fa fa-bookmark"></i> Fee structure</a>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <a href="" class="active"><i class="fa fa-briefcase"></i> Admins Setting</a>
                         <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </div>
@@ -198,6 +201,7 @@ echo "</tbody>
                               }
 
                               ?>
+<<<<<<< HEAD
                               <br><br>
 
 
@@ -266,6 +270,8 @@ echo "</tbody>
                               }
 
                               ?>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         
                                              
                                   

@@ -2,7 +2,11 @@
 require("../database/db.php");
 
 $query=$_GET['query'];
+<<<<<<< HEAD
 $search=mysqli_query($conn,"SELECT *FROM `student` WHERE id LIKE '%$query%' OR fullname LIKE '%$query%' OR parent_name LIKE '%$query%' OR birth_certificate LIKE '%$query%' ORDER BY id DESC");
+=======
+$search=mysqli_query($conn,"SELECT *FROM `student` WHERE id LIKE '%$query%' OR fullname LIKE '%$query%' OR birth_certificate LIKE '%$query%' ORDER BY id DESC");
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 if(mysqli_num_rows($search)){
 
@@ -42,7 +46,11 @@ while ($row = mysqli_fetch_array($search)) {
         $edit_btn="";
     }
 
+<<<<<<< HEAD
 echo "<a href='../urls/view_student.php?sreg=$sreg'> $sreg - $sname - $sgender [ <i class='fa fa-phone'></i> $pnumber] - <span style='color:grey;display:inline;font-size:12px'>($prelation) $pname</span>  $delete_msg  $delete_btn $edit_btn</a>";
+=======
+echo "<a href='../urls/view_student.php?sreg=$sreg'> $sreg - $sname - $sgender [$pnumber]  $delete_msg  $delete_btn $edit_btn</a>";
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 }
 

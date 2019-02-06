@@ -4,8 +4,11 @@
 
 require("../database/db.php");
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 $students_query=mysqli_query($conn,"SELECT *FROM `student` WHERE delete_status = '0'");
 $students_nums=mysqli_num_rows($students_query);
 
@@ -32,6 +35,7 @@ while($row=mysqli_fetch_array($school_name)){
 
 }
 
+<<<<<<< HEAD
 $current_term=mysqli_query($conn,"SELECT *FROM `setting2` WHERE title='Term'");
 while($row=mysqli_fetch_array($current_term)){
     $the_current_term=$row[1];
@@ -39,5 +43,8 @@ while($row=mysqli_fetch_array($current_term)){
 }
 
 $year=date("Y");
+=======
+
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 ?>

@@ -68,8 +68,11 @@ require("../headers.php");
                         <a href="all_students.php" class="active"><i class="fa fa-graduation-cap"></i>All student <span class="badge"><?php echo $students_nums?></span></a>
                         <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge"><?php echo $de_registred_nums?></span></a>
                         <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
+<<<<<<< HEAD
                         <a href="fee.php"><i class="fa fa-money-bill-alt"></i> Fee</a>
                         <a href="#"><i class="fa fa-bookmark"></i> Fee structure</a>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <a href="admins.php"><i class="fa fa-cogs"></i> Admin Setting</a>
                         <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </div>
@@ -92,6 +95,7 @@ require("../headers.php");
 
                         <form action="" method="GET" id="search-form" class="horizontal">
                             <div class="form-group">
+<<<<<<< HEAD
                                 <div class="col-sm-4">
 
                                 </div>
@@ -101,11 +105,21 @@ require("../headers.php");
                                 </div>
                                 <div class="col-sm-5">
                                     <input type="text" class="form-control" placeholder="Search by name, birth certificate,Parent name or registration"
+=======
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Search by name, birth certificate or registration"
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                         id="query" name="query" onkeyup="search_student()">
                                     <div id="suggestion">
 
                                     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                 </div>
                             </div>
                         </form>
@@ -118,7 +132,10 @@ require("../headers.php");
                                     <div class="col-sm-3">
                                         <label for="">Gender:</label>
                                         <select name="" id="gender" class="form-control">
+<<<<<<< HEAD
                                         <option value="">---</option>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                             <option value="Male">Male</option>
                                             <option value="Female">Female</option>
                                         </select>

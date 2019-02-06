@@ -91,7 +91,11 @@ require("../headers.php");
                      
                       
 
+<<<<<<< HEAD
                         <div >
+=======
+                        <div id="">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
                         <?php
 
@@ -127,7 +131,10 @@ while ($row = mysqli_fetch_array($fetch)) {
     $pname=$row[7];
     $prelation=$row[8];
     $pnumber=$row[9];
+<<<<<<< HEAD
     $current_class=$row[12];
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
  
 
@@ -138,11 +145,19 @@ while ($row = mysqli_fetch_array($fetch)) {
 
 
 ?>
+<<<<<<< HEAD
                             <h3><?php echo "$sname - $sclass"?></h3>
                             <hr>
                                              <button type='button' class='btn btn-danger' id='delete' sid='<?php echo $sreg ?>'><i class='fa fa-trash'></i></button>
 
                             <div class="col-sm-12" style="margin:20px 0px;" id="personal-details">
+=======
+                            <h3><?php echo $sname?></h3>
+                            <hr>
+                                             <button type='button' class='btn btn-danger' id='delete' sid='<?php echo $sreg ?>'><i class='fa fa-trash'></i></button>
+
+                            <div class="col-sm-12" style="margin:20px 0px;">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
                             <div class="col-sm-6">
                                 <h4>Personal Details</h4>
@@ -169,6 +184,7 @@ while ($row = mysqli_fetch_array($fetch)) {
 
 
                             </div>
+<<<<<<< HEAD
 
                             
                             </div>
@@ -233,6 +249,8 @@ else{
 
 
 ?>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                             </div>
 
 

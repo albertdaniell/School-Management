@@ -88,6 +88,7 @@ if(empty($start) || empty($end)){
     exit();
 }
 
+<<<<<<< HEAD
 
 
 
@@ -172,6 +173,8 @@ if(!empty($start) || !empty($end) || empty($gender)){
     exit();
 }
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 if(!empty($gender) || !empty($start) || !empty($end)){
     $fetch2=mysqli_query($conn, "SELECT *FROM `student` WHERE delete_status = '0' AND gender = '$gender' AND date_admitted BETWEEN '$start' AND '$end' ORDER BY date_updated DESC");
 

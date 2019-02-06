@@ -1,8 +1,11 @@
 <?php
 
 require("db.php");
+<<<<<<< HEAD
 require("date.php");
 require("../urls/stats.php");
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 $sql="CREATE TABLE users(
 id INT(6) AUTO_INCREMENT PRIMARY KEY,
@@ -54,8 +57,12 @@ $sql2="CREATE TABLE student(
     parent_relationship varchar(200),
     phone varchar(200),
     delete_status varchar(200),
+<<<<<<< HEAD
     date_updated TIMESTAMP,
     current_class VARCHAR(200)
+=======
+    date_updated TIMESTAMP
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
     
     )ENGINE= innoDB AUTO_INCREMENT =2001 DEFAULT CHARSET =latin1";
     
@@ -99,10 +106,16 @@ $sql2="CREATE TABLE student(
             $check_user = mysqli_query($conn, "SELECT *FROM `setting`");
             if(mysqli_num_rows($check_user)>0){
                 echo " <br> Only one record is allowed in settings";
+<<<<<<< HEAD
                
             }
 
            else{
+=======
+                exit();
+            }
+
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
             $add_setting=mysqli_query($conn,"INSERT INTO `setting` VALUES('School name','Test School')");
             if($add_setting){
                 echo "<br> School created";
@@ -112,6 +125,7 @@ $sql2="CREATE TABLE student(
             else{
                 echo "<br>". mysqli_error($conn);
             }
+<<<<<<< HEAD
            }
 
 
@@ -219,5 +233,7 @@ if (mysqli_query($conn, $sql5)) {
                 
 
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
             
 ?>

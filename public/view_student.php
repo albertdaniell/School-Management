@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!-- <?php
+=======
+<?php
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 session_start();//here we start a session
 $email=$_SESSION["email"];
@@ -190,4 +194,8 @@ while ($row = mysqli_fetch_array($fetch)) {
 
 </body>
 
+<<<<<<< HEAD
 </html> -->
+=======
+</html>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8

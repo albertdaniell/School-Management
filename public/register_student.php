@@ -28,7 +28,11 @@ require("../headers.php");
 
 <body>
 
+<<<<<<< HEAD
     <div id="pop-up">
+=======
+<div id="pop-up">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
         <span id="pop-up-txt">
 
         </span>
@@ -38,7 +42,11 @@ require("../headers.php");
 
         <div class="row" style="padding:0">
             <div class="col-md-12" style="padding:0">
+<<<<<<< HEAD
                 <div class="col-sm-2" id="sidenav">
+=======
+            <div class="col-sm-2" id="sidenav">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                     <div id="head">
                         <div class="col-sm-2">
                             <i class="fa fa-briefcase fa-2x" style="color:#ccc"></i>
@@ -51,6 +59,7 @@ require("../headers.php");
                     <div id="side-nav-links">
                         <a href="index.php"><i class="fa fa-tachometer-alt"></i>Dashboard</a>
                         <a href="register_student.php" class="active"><i class="fa fa-user"></i> Register student</a>
+<<<<<<< HEAD
                         <a href="all_students.php"><i class="fa fa-graduation-cap"></i>All student <span class="badge">
                                 <?php echo $students_nums?></span></a>
                         <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge">
@@ -58,21 +67,35 @@ require("../headers.php");
                         <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
                         <a href="fee.php"><i class="fa fa-money-bill-alt"></i> Fee</a>
                         <a href="#"><i class="fa fa-bookmark"></i> Fee structure</a>
+=======
+                        <a href="all_students.php" ><i class="fa fa-graduation-cap"></i>All student <span class="badge"><?php echo $students_nums?></span></a>
+                        <a href="de_registered.php"><i class="fa fa-trash"></i> De-registered students <span class="badge"><?php echo $de_registred_nums?></span></a>
+                        <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <a href="admins.php"><i class="fa fa-cogs"></i> Admin Setting</a>
                         <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </div>
                 </div>
                 <div class="col-sm-10" id="main-div">
+<<<<<<< HEAD
                     <nav class="navbar navbar-default">
+=======
+                <nav class="navbar navbar-default">
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <a class="navbar-brand" href="#"></a>
                             </div>
                             <ul class="nav navbar-nav">
+<<<<<<< HEAD
                                 <li class="active"><a href="#">
                                         <?php echo $email ?></a></li>
                                 <li><a href="#">
                                         <?php echo $school?></a></li>
+=======
+                                <li class="active"><a href="#"><?php echo $email ?></a></li>
+                                <li><a href="#"><?php echo $school?></a></li>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                 <li><a href="logout.php">Log Out</a></li>
                             </ul>
                         </div>
@@ -80,7 +103,11 @@ require("../headers.php");
 
 
                     <div class="col-sm-12">
+<<<<<<< HEAD
                         <h3><i class="fa fa-user"></i> Register Student</h3>
+=======
+                        <h3><i class="fa fa-user"></i>  Register Student</h3>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <hr>
 
                         <form class="form-horizontal" method="POST" action="" name="register-student-form" id="register-student-form">
@@ -90,11 +117,19 @@ require("../headers.php");
 
                                 <legend>Student Details</legend>
                                 <div class="form-group">
+<<<<<<< HEAD
 
                                     <div class="col-sm-6">
                                         <label for="">Full name *</label>
                                         <input type="text" id="sname" name="sname" class="form-control">
 
+=======
+                                   
+                                    <div class="col-sm-6">
+                                        <label for="">Full name *</label>
+                                        <input type="text" id="sname" name="sname" class="form-control">
+                                        
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                     </div>
 
                                     <div class="col-sm-6">
@@ -139,6 +174,7 @@ require("../headers.php");
                                             <option value="Class 6">Class 6</option>
                                             <option value="Class 7">Class 7</option>
                                             <option value="Class 8">Class 8</option>
+<<<<<<< HEAD
 
                                         </select>
 
@@ -172,6 +208,12 @@ require("../headers.php");
 
 
 
+=======
+                                            
+                                        </select>
+
+                                    </div>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                     <div class="col-sm-6">
                                         <label for="">Date admitted (Leave blank if date of admission is today)</label>
                                         <input type="date" id="sdate" name="sdate" class="form-control">
@@ -228,6 +270,7 @@ require("../headers.php");
 
     <script src="../javascript/jquery2.1.min.js"></script>
     <script src="../javascript/main.js"></script>
+<<<<<<< HEAD
 
     <script>
 
@@ -237,6 +280,17 @@ require("../headers.php");
     </script>
 
 
+=======
+    
+    <script>
+    
+  
+ 
+ 
+</script>
+
+  
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 </body>
 
 </html>

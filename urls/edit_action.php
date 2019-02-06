@@ -10,7 +10,11 @@ if(mysqli_num_rows($fetch)>0){
     $fetch2=mysqli_query($conn, "SELECT *FROM `student` where id='$sid' AND delete_status='1'");
     if(mysqli_num_rows($fetch2)){
         echo "
+<<<<<<< HEAD
        <h3> Record does not exist in the database, you wont be able to edit, please reload your page</h3>
+=======
+        Record does not exist in the database, you wont be able to delete
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
         ";
 
         exit();
@@ -39,7 +43,10 @@ while ($row = mysqli_fetch_array($fetch)) {
     $pname=$row[7];
     $prelation=$row[8];
     $pnumber=$row[9];
+<<<<<<< HEAD
     $scurrentclass=$row[12];
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 
     
@@ -94,11 +101,14 @@ echo '
             <label for="">Class Admitted To *</label>
             <select name="" id="sclass" class="form-control" name="sclass">
                 <option value="'.$sclass.'">'.$sclass.'</option>
+<<<<<<< HEAD
                
                 <option value="Baby Class">Baby Class</option>
                 <option value="Kg 1"> Kg 1</option>
                 <option value="Kg 2">Kg 2</option>
                 <option value="Kg 3">Kg 3</option>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                 <option value="Class 1">Class 1</option>
                 <option value="Class 2">Class 2</option>
                 <option value="Class 3">Class 3</option>
@@ -109,6 +119,7 @@ echo '
                 <option value="Class 8">Class 8</option>
             </select>
 
+<<<<<<< HEAD
             
 
         </div>
@@ -134,6 +145,9 @@ echo '
 
     </div>
         
+=======
+        </div>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
         <div class="col-sm-12">
             <label for="">Date admitted (Leave blank if date of admission is today)</label>
             <input type="date" id="sdate" name="sdate" class="form-control" value='.$sdate.'>

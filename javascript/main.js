@@ -65,15 +65,22 @@ success.style.visibility = "hidden";
 
 function showMsg() {
 var loginmsg = document.getElementById("pop-up");
+<<<<<<< HEAD
 loginmsg.style.bottom="20px";
 loginmsg.style.opacity = "1";
 loginmsg.style.visibility = "visible";
 
 
+=======
+loginmsg.style.opacity = "1";
+loginmsg.style.visibility = "visible";
+
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 }
 
 function hideMsg() {
 var loginmsg = document.getElementById("pop-up");
+<<<<<<< HEAD
 loginmsg.style.bottom="-20px";
 
 setTimeout(function(){
@@ -81,6 +88,10 @@ setTimeout(function(){
     loginmsg.style.visibility = "hidden";
 },100);
 
+=======
+loginmsg.style.opacity = "0";
+loginmsg.style.visibility = "hidden";
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 }
 
@@ -219,7 +230,10 @@ var sdate = document.getElementById('sdate').value
 var pname = document.getElementById('pname').value
 var prelation = document.getElementById('prelation').value
 var pnumber = document.getElementById('pnumber').value
+<<<<<<< HEAD
 var scurrentclass = document.getElementById('scurrentclass').value
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 var form = document.getElementById("register-student-form");
 
 
@@ -244,8 +258,12 @@ sclass: sclass,
 sdate: sdate,
 pname: pname,
 prelation: prelation,
+<<<<<<< HEAD
 pnumber: pnumber,
 scurrentclass:scurrentclass
+=======
+pnumber: pnumber
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 
 },
@@ -454,7 +472,10 @@ var sdate = document.getElementById('sdate').value
 var pname = document.getElementById('pname').value
 var prelation = document.getElementById('prelation').value
 var pnumber = document.getElementById('pnumber').value
+<<<<<<< HEAD
 var scurrentclass = document.getElementById('scurrentclass').value
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 
 $.ajax({
@@ -470,8 +491,12 @@ sclass: sclass,
 sdate: sdate,
 pname: pname,
 prelation: prelation,
+<<<<<<< HEAD
 pnumber: pnumber,
 scurrentclass:scurrentclass
+=======
+pnumber: pnumber
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 },
 
 success:function(data){
@@ -561,6 +586,7 @@ $("body").delegate("#update-school-form", "submit", function (e) {
 });
 
 
+<<<<<<< HEAD
 
 $("body").delegate("#change-term-btn", "click", function (e) {
     e.preventDefault();
@@ -616,6 +642,8 @@ $("body").delegate("#update-term-form", "submit", function (e) {
 });
 
 
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 $("body").delegate("#add-admin-btn", "click", function (e) {
    
     e.preventDefault();
@@ -668,6 +696,7 @@ $("body").delegate("#add-admin-form", "submit", function (e) {
     });
 });
     
+<<<<<<< HEAD
     });
 
 
@@ -835,3 +864,6 @@ $("body").delegate("#add-to-feestructure-form", "submit", function (e) {
 
     
     
+=======
+    });
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8

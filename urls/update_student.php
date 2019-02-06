@@ -13,7 +13,10 @@ require("../database/db.php");
    $pname=$_POST['pname'];
    $prelation=$_POST['prelation'];
    $pnumber=$_POST['pnumber'];
+<<<<<<< HEAD
    $scurrentclass=$_POST['scurrentclass'];
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
    
    if(empty($sname) || empty($sgender) || empty($sdob) || empty($sclass) ||  empty($pname) || empty($prelation) || empty($pnumber)){
@@ -21,6 +24,7 @@ require("../database/db.php");
        exit();
    }
 
+<<<<<<< HEAD
    $check=mysqli_query($conn, "SELECT *FROM `student` WHERE birth_certificate = '$scertificate' AND id !='$sid'");
    if(mysqli_num_rows($check)>0){
        echo "There exists another student with the same birth certificate number!";
@@ -31,6 +35,10 @@ require("../database/db.php");
 
 
 $update_sql=mysqli_query($conn,"UPDATE `student` SET fullname ='$sname' ,gender ='$sgender' ,dob='$sdob' ,birth_certificate = '$scertificate' , class= '$sclass', date_admitted= '$sdate', parent_name = '$pname' , parent_relationship = '$prelation', phone ='$pnumber', date_updated = NOW(), current_class = '$scurrentclass' WHERE id = '$sid'");
+=======
+
+$update_sql=mysqli_query($conn,"UPDATE `student` SET fullname ='$sname' ,gender ='$sgender' ,dob='$sdob' ,birth_certificate = '$scertificate' , class= '$sclass', date_admitted= '$sdate', parent_name = '$pname' , parent_relationship = '$prelation', phone ='$pnumber', date_updated = NOW() WHERE id = '$sid'");
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 if($update_sql){
 
     echo "

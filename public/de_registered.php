@@ -68,8 +68,11 @@ require("../headers.php");
                             <span class="badge">
                                 <?php echo $de_registred_nums?></span> </a>
                         <a href=""><i class="fa fa-exchange-alt"></i>Transfered students</a>
+<<<<<<< HEAD
                         <a href="fee.php"><i class="fa fa-money-bill-alt"></i> Fee</a>
                         <a href="#"><i class="fa fa-bookmark"></i> Fee structure</a>
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                         <a href="admins.php"><i class="fa fa-cogs"></i> Admin Setting</a>
                         <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
                     </div>
@@ -93,6 +96,7 @@ require("../headers.php");
 
                     <div class="col-sm-12">
 
+<<<<<<< HEAD
                     <form action="" method="GET" id="search-form" class="horizontal">
                             <div class="form-group">
                                 <div class="col-sm-4">
@@ -103,6 +107,15 @@ require("../headers.php");
                                 </div>
                                 <div class="col-sm-5">
                                     <input type="text" class="form-control" placeholder="Search by name, birth certificate,Parent name or registration"
+=======
+                        <form action="" method="GET" id="search-form" class="horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-6">
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Search by name, birth certificate or registration"
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
                                         id="query" name="query" onkeyup="search_student()">
                                     <div id="suggestion">
 

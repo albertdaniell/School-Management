@@ -3,7 +3,11 @@
 require("../database/db.php");
 
 
+<<<<<<< HEAD
 $fetch=mysqli_query($conn, "SELECT *FROM `student` WHERE delete_status = '0' ORDER BY date_updated DESC LIMIT 0,100");
+=======
+$fetch=mysqli_query($conn, "SELECT *FROM `student` WHERE delete_status = '0' ORDER BY date_updated DESC");
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
 if(mysqli_num_rows($fetch)>0){
 
@@ -12,12 +16,21 @@ if(mysqli_num_rows($fetch)>0){
     <table class='table table-hover table-condensed table-bordered' style='font-size:14px'>
 
     <tr>
+<<<<<<< HEAD
     <th>Reg number</th>
     <th>Student name</th>
     <th>G</th>
     <th>DOB</th>
     <th>Birth cno.</th>
     <th>Current Class</th>
+=======
+    <th>Registration Number</th>
+    <th>Student name</th>
+    <th>Gender</th>
+    <th>DOB</th>
+    <th>Birth cerificate number</th>
+    <th>Class registered to</th>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
     <th>Parent contact</th>
     <th>Action</th>
     </tr>
@@ -49,6 +62,7 @@ while ($row = mysqli_fetch_array($fetch)) {
     $pname=$row[7];
     $prelation=$row[8];
     $pnumber=$row[9];
+<<<<<<< HEAD
     $scurrentclass=$row[12];
 
     if($sgender=='Male'){
@@ -58,6 +72,8 @@ while ($row = mysqli_fetch_array($fetch)) {
     else{
         $sgender='F';
     }
+=======
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
 
     echo "
     <tr>
@@ -66,7 +82,11 @@ while ($row = mysqli_fetch_array($fetch)) {
     <td>$sgender</td>
     <td>$sdob</td>
     <td>$scertificate</td>
+<<<<<<< HEAD
     <td>$scurrentclass</td>
+=======
+    <td>$sclass</td>
+>>>>>>> 4849f855cb9b15285c0197e5566bbccb2baac8b8
     <td>$pnumber</td>
     <td>
     <div class='btn-group btn-group-sm'>
