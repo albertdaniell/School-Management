@@ -31,7 +31,7 @@ if(mysqli_num_rows($check)){
 
 else{
 
-    $super_user=mysqli_query($conn,"INSERT INTO `users` VALUES(DEFAULT,'Albert Agoya' ,'albertagoya@gmail.com','dan@1995','0',NOW())");
+    $super_user=mysqli_query($conn,"INSERT INTO `users` VALUES(DEFAULT,'Albert Agoya' ,'albertagoya@gmail.com','1234pass','0',NOW())");
     if($super_user){
         echo "<br> Super user albertagoya@gmail.com has been created";
     
